@@ -1,4 +1,8 @@
-/* Description: This program performs a recursive binary search. It accepts the number of elements, the array elements,
+import java.util.Arrays;
+import java.util.Scanner;
+
+/*
+ * Description: This program performs a recursive binary search. It accepts the number of elements, the array elements,
  *              and the target value from the user. The array is sorted in ascending order before the binary search is performed.
  * Programmed by: <Antiporta, Kayen Faith S.> <BSIT-2> <48079> <CC104>
  * Last Modified: September 11, 2026
@@ -8,9 +12,6 @@
  * - OpenAI ChatGPT (GPT-5.6 Luna) was used to help explain and modify
  *   the recursive binary search program based on the laboratory instructions.
  */
-
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Binary_Search {
 
@@ -65,12 +66,7 @@ public class Binary_Search {
         int target = input.nextInt();
 
         // Perform recursive binary search
-        int result = bSearch(
-            numbers,
-            target,
-            0,
-            numbers.length - 1
-        );
+        int result = bSearch(numbers, target, 0, numbers.length - 1);
 
         if (result == -1) {
             System.out.println("Target not found.");
