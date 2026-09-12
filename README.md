@@ -1,32 +1,18 @@
-Laboratory Activity: Recursion
+# Laboratory Activity: Recursion
 
-Program Description:
-This program performs a recursive binary search. It accepts the number
-of elements, the array elements, and a target value from the user.
-The array is sorted in ascending order before the binary search.
+## Brief Description
 
-Language:
+This Java program demonstrates recursive binary search. It accepts the number of elements, the array values, and a target value from the user. Because binary search requires an ascending sorted array, the program sorts the input before searching. It then displays the recursive search trace and returns the target's index in the sorted array, or `-1` if the target is not found.
+
+## Programming Language
+
 Java
 
-Compile:
+## How to Compile and Run
+
+1. Open a terminal in this folder.
+
+2. Compile the source file:
+
+```bash
 javac Binary_Search.java
-
-Run:
-java Binary_Search
-
-Sample Input:
-7
-10 20 30 40 50 60 70
-30
-
-Sample Output:
-binarySearch(0, 6, 30)
-binarySearch(0, 2, 30)
-binarySearch(2, 2, 30)
-Target found.
-Index: 2
-
-AI Disclosure:
-OpenAI ChatGPT (GPT-5.6 Luna) was used to help explain
-and modify the recursive binary search program based on
-the laboratory instructions.
